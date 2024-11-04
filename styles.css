@@ -1,0 +1,87 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+img,
+span {
+    display: block;
+}
+
+span {
+    background-color: var(--Grey-700);
+    width: 100%;
+    text-align: center;
+    border-radius: .5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+span:hover {
+    background-color: var(--Green);
+    color: var(--Grey-800);
+    font-weight: 800;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--Grey-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 300px;
+}
+
+
+.card {
+    background-color: var(--Grey-800);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-family: 'Inter';
+    color: var(--White);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+
+}
+
+.card>img {
+    border-radius: 50%;
+    height: 6rem;
+    aspect-ratio: 1;
+
+}
+
+.card h1 {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.accent-text {
+    color: var(--Green);
+    font-size: .85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.bioLine {
+    font-size: .75rem;
+}
+
+.link-list {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
